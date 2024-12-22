@@ -1,0 +1,19 @@
+<header class="app-header">
+  <div class="logo">
+    <img src="favicon.ico" alt="App Logo" />
+    <span>MyApp</span>
+  </div>
+  <nav class="nav-links">
+    <a routerLink="/" routerLinkActive="active">Home</a>
+    <a routerLink="/about" routerLinkActive="active">About</a>
+    <a routerLink="/contact" routerLinkActive="active">Contact</a>
+  </nav>
+  <div class="theme-switcher">
+    <label for="theme">Theme:</label>
+    <select id="theme" (change)="changeTheme($event)">
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+      <option value="blue">Blue</option>
+    </select>
+  </div>
+</header>

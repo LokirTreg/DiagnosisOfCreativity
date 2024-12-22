@@ -1,0 +1,74 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #61dafb;
+}
+
+.theme-dark {
+  --background-color: #282c34;
+  --text-color: #ffffff;
+  --primary-color: #21a1f1;
+}
+
+.theme-blue {
+  --background-color: #001f3f;
+  --text-color: #ffffff;
+  --primary-color: #A074d9;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.app-header .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.app-header .logo img {
+  height: 40px;
+}
+.app-header .logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+.app-header .nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+.app-header .nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+.app-header .nav-links a:hover {
+  color: var(--primary-color);
+}
+.app-header .nav-links a.active {
+  border-bottom: 2px solid var(--primary-color);
+}
+.app-header .theme-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.app-header .theme-switcher select {
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  margin: 0;
+}
